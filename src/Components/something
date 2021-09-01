@@ -1,0 +1,62 @@
+<div className="frontCard">
+            <ion-icon
+              className="frontCardLogo"
+              name="code-working-outline"
+            ></ion-icon>
+            ARPAN SINGH
+            <div className="clickContact" onClick={handleClick}>
+              Click <ion-icon name="flash-outline"></ion-icon> here{" "}
+            </div>
+          </div><div className="frontCard">
+            <ion-icon
+              className="frontCardLogo"
+              name="code-working-outline"
+            ></ion-icon>
+            ARPAN SINGH
+            <div className="clickContact" onClick={handleClick}>
+              Click <ion-icon name="flash-outline"></ion-icon> here{" "}
+            </div>
+          </div>
+
+
+
+
+          /////
+
+
+
+          <div className="messageOuterContainer">
+            <div className="messageText">
+              <h1>Let's</h1>
+              <h2>Connect</h2>
+              <p>Feel free to connect with me</p>
+            </div>
+            <div className="partitionLine"></div>
+            <div className="messageForm">
+              <form className="formOuter">
+                <input
+                  className="formInput"
+                  type="text"
+                  placeholder="Name"
+                ></input>
+                <input
+                  className="formInput"
+                  type="email"
+                  placeholder="E-mail"
+                ></input>
+                <textarea
+                  className="formInput2"
+                  name="Text1"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </form>
+              <button
+                className="formButton"
+                type="submit"
+                onClick={handleClick}
+              >
+                Go
+              </button>
+            </div>
+          </div>

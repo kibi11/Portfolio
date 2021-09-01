@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+html
+{
+    scroll-behavior: smooth;
+}
+.footer {
+    /* background-color: white; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: azure;
+    padding: 15px;
+    position: relative;
+}
+
+.Icon-wrapper {
+    display: flex;
+    width: 150px;   
+    /* background-color: red; */
+    /* align-items: center; */
+    justify-content: space-around;
+    /* background-color: red; */
+
+
+}
+
+.Icon {
+    list-style: none;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    transition: transform 0.2s;
+    opacity: 0.9;
+
+  
+}
+
+.footer p {
+    font-family:'Poppins', Courier, monospace;
+    font-size: 0.75em;
+}
+
+.Icon ion-icon {
+    font-size: 25px;
+    cursor: pointer;
+    
+   
+}
+
+.Icon:hover {
+    opacity: 1;
+
+    transform: translateY(-3px);
+}
+
+
+
+
+

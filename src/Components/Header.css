@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ubuntu:wght@500&display=swap');
+
+:root {
+    --primary-color: #090C0C;
+    --secondary-color: #12141D;
+    --tertiary-color: #87B913;
+    --font-color-1: #EAECEC;
+    --fontsize-sm: 10px;
+    --fontsize-md: 15px;
+    --fontsize-lg: 25px;
+    --fontsize-xl: 40px;
+
+  }
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 12vh;
+    color: var(--font-color-1);
+    letter-spacing: 3px;
+
+    z-index: 1000;
+    position: sticky;
+    top:0px;
+
+
+
+
+}
+
+
+.navTitle {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    padding-left: 30px;
+
+}
+
+.navItems {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    /* font-weight: bolder; */
+
+
+}
+
+.navItem {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color-1);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+#overlay {
+    display: none;
+}
+
+
+
+@media (max-width: 920px) {
+
+    .navItems{
+        display: none;
+    }
+    #hamburger {
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.25s linear;
+        width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+        height: clamp(2rem, 1.4vw + 1.7rem, 5rem);
+        display: flex;
+        align-items: center;
+        padding-right: 4rem;
+      }
+      
+      #hamburger:hover {
+        opacity: 1;
+      }
+      
+      #hamburger div,
+      #hamburger div:after,
+      #hamburger div:before {
+        background-color: #fafafa;
+        border-radius: 10px;
+        width: clamp(1.5rem, 2vw + 1.1rem, 6rem);
+        height: clamp(0.2rem, 0.3vw + 0.1rem, 0.8rem);
+        transition: all 0.15s linear;
+      }
+      
+      #hamburger div:before,
+      #hamburger div:after {
+        content: "";
+        position: absolute;
+      }
+      
+      #hamburger div:before {
+        transform: translateY(-200%);
+      }
+      
+      #hamburger div:after {
+        transform: translateY(200%);
+      }
+      
+      #hamburger.open div {
+        background: transparent;
+      }
+      
+      #hamburger.open div:before {
+        transform: rotate(45deg);
+      }
+      
+      #hamburger.open div:after {
+        transform: rotate(-45deg);
+      }
+      
+      #overlay {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        background-color: var(--primary-color);
+        z-index: 10;
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #overlay.menu {
+        transform: translateY(69%);
+      }
+      
+      #overlay a {
+        text-decoration: none;
+        color: #fafafa;
+        font-size: clamp(1rem, 4.1vw + 0.2rem, 10rem);
+        margin: 2%;
+        opacity: 0.5;
+        transition: opacity 0.2s linear;
+      }
+      
+      #overlay a:hover {
+        opacity: 1;
+      }
+
+        .navTitle {
+            font-size: 30px;
+        }
+        
+
+
+}

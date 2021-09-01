@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+.spinner {
+
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    overflow: hidden;
+    font-size: 2em;
+    animation: loadingTransition 1s ease-in 2s forwards;
+
+}
+
+.spinner
+
+.loader {
+    width: 50%;
+    height: 10px;
+    background-color: white;
+    margin-top: 2em;
+
+}
+
+.loader::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondary-color);
+    z-index: 10;
+    animation: loading 2s ease-in forwards;
+    display: block;
+}
+
+@keyframes loading {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+    
+}
+
+@keyframes loadingTransition {
+    from {
+        
+         
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}

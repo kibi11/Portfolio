@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+section {
+    height: 100vh;
+    color: var(--font-color-1)
+    /* scroll-snap-align: start; */
+}
+
+
+.sectionContainer {
+    position: relative;
+    top: -1vh;
+    z-index:  100;
+
+}
+
+
+#section1 {
+
+    background-color: var(--secondary-color);
+    border-width: thick;
+    display: flex;
+    justify-content: center;
+
+    height: 75vh;
+    margin: auto;
+
+}
+
+
+
+.animatedtext {
+    margin-top: 50px;
+    line-height: 1.5em;
+
+}
+
+.animatedtext p{
+    margin-top: 25px;
+}
+/* Particle Background starts */
+
+.ParticleBackground {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+/* Particle Background ends */
+
+/* making the typing animation */
+
+
+
+
+
+/* making the typing animation */
+
+
+
+
+#section1 button {
+    background-color: white;
+    border: none;
+
+    width: 32%;
+    height: 15%;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+#section1 button:hover {
+    letter-spacing: 2px;
+
+}
+
+
+
+.IntroductionText {
+    /* background-color: var(--secondary-color); */
+    color: var(--font-color-1);
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    /* position: absolute; */
+    padding: 2em;
+    height: 400px;
+    color: rgb(206, 202, 202);
+
+
+}
+
+.IntroductionText h1 {
+    font-size: 60px;
+    color: var(--tertiary-color);
+    font-weight: 1000;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.IntroductionText p {
+    font-size: 0.98rem;
+}
+
+/* 
+.IntroductionImage {
+    background-color: #12141d;
+    width: 18%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#section2 {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#section3 {
+
+    background-color: #12141d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.messageOuterContainer{
+    background-color: rgba(255, 255, 255, .07);  
+    border-radius: 0.2em;
+    backdrop-filter: blur(5px);
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s;
+    /* transform-style: preserve-3d; */
+    position: absolute  ;
+
+}
+
+
+/* Front Card  */
+
+.frontCard {
+    background-color: var(--tertiary-color); 
+    font-size: 3rem;  
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    font-family: 'Shadows Into Light', cursive;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    /* position: absolute; */
+    transition: 3s;
+    width: 70%;
+    height: 70%;
+    /* transform-style: preserve-3d;     */
+    /* backface-visibility: hidden; */
+    z-index: 10;
+       
+    
+}
+
+
+.cardAnime{
+    animation: cardanime 2s forwards;
+
+}
+
+@keyframes cardanime {
+    100%{
+        transform: translateX(-100%);
+    }
+    0%{
+        transform: translateX(0);
+    }
+}
+
+
+ion-icon {
+    font-size: 150px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+.clickContact {
+    font-size: 1rem;
+    margin-top: 100px;
+    cursor:pointer;
+}
+.clickContact ion-icon {
+    font-size: 1rem;   
+}
+
+
+
+
+  /* Front Card ends */
+
+.messageText{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3em;
+    color: whitesmoke;
+    padding-left:0.7em;
+}
+.messageText h2{
+    color: greenyellow;
+}
+
+.messageText p {
+    font-size: 0.4em;
+}
+.messageForm{
+
+    width: 40%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+
+}
+
+.formOuter{
+    width: 80%;
+    height: 80%;
+    /* background-color: turquoise; */
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.partitionLine {
+    background-color: var(--tertiary-color);
+    width: 5px;
+    height: 60%;
+}
+
+.formInput{
+    width: 100%;
+    height: 40px;
+    padding: 2%;
+    margin: 2%;
+    border:none;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    border-bottom: 2px solid grey;
+    text-decoration-style: none;
+    caret-color: whitesmoke;
+    color: white;
+    
+}
+
+.formInput::placeholder {
+    color: whitesmoke;
+    opacity: 0.5;
+    padding-left: 10px;
+}
+
+.formInput2{
+    width: 100%;
+    height: 40%;
+    padding: 2%;
+    margin: 2%;
+    border:none;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    border-style: none;
+    background-color: transparent;
+    border-bottom: 2px solid grey ;
+    caret-color: whitesmoke;
+    color:white;
+}
+
+.formButton{
+
+    width: 40%;
+    height: 45px;
+    background-color: #ffc300;
+    padding: 2%;
+    margin: 2%;
+    border:none;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-style: none;
+    cursor: pointer;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+@media screen  and (max-width: 920px) {
+
+    .messageOuterContainer{
+        width: 85%;
+    }
+
+    .messageText {
+        display: none;
+    }
+    
+    .messageForm {
+        width: 100%;
+        
+    }
+    .partitionLine {
+        display: none;
+    }
+}
