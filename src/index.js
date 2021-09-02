@@ -4,7 +4,6 @@ import "./index.css";
 import Header from "./Components/Header";
 import MainContent from "./Components/MainContent";
 import Footer from "./Components/Footer";
-import ParticleBackground from "./Components/ParticleBackground";
 import Preloader from "./Components/Preloader";
 
 const App = () => {
@@ -22,11 +21,7 @@ const App = () => {
         <div className="mainPage">
           {" "}
           <Header />
-          <svg
-            className="graphicsectionContainer"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 300 "
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300 ">
             <path
               fill="#090C0C"
               fill-opacity="1"

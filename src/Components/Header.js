@@ -1,5 +1,5 @@
 import "./Header.css";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
   const [responsive, setResponsive] = useState(false);

@@ -2,6 +2,10 @@ import "./MainContent.css";
 import profilepic from "../Images/pp.svg";
 import ParticleBackground from "./ParticleBackground";
 import { useState } from "react";
+import Work from "./Work/Work";
+import Xmeme from "./../Images/x-meme.PNG";
+import Clone1 from "./../Images/clone.PNG";
+import { RemoveScrollBar } from "react-remove-scroll-bar";
 
 const MainContent = () => {
   const [cardAnime, setCardAnime] = useState(false);
@@ -12,9 +16,9 @@ const MainContent = () => {
   };
 
   return (
-    <div class="sectionContainer">
+    <div className="sectionContainer">
       <section id="section1">
-        <div class="IntroductionText">
+        <div className="IntroductionText">
           <h1> Hola 👋</h1>
           <div className="animatedtext">
             <h2> Arpan Here ! </h2>
@@ -28,7 +32,27 @@ const MainContent = () => {
 
       <section id="section2">
         <ParticleBackground className="ParticleBackground" />
+        <div className="workContainer">
+          <div className="workContainerTitle">My Works</div>
+          <div className="workInnerContainer">
+            <Work
+              url={Xmeme}
+              title="X-Meme"
+              githubLink={"https://github.com/kibi11/X-Meme"}
+              des={
+                " A MERN Stack Project , where you can share and see Memes :) "
+              }
+            />
+            <Work
+              url={Clone1}
+              title="AirBnB - Clone"
+              githubLink={"https://github.com/kibi11/airbnb-clone"}
+              des={"An AirBnB clone using NEXT Js , Tailwind CSS and MapBox "}
+            />
+          </div>
+        </div>
       </section>
+
       <section id="section3">
         <div className={`frontCard ${cardAnime ? "cardAnime" : null}`}>
           <ion-icon
@@ -48,22 +72,24 @@ const MainContent = () => {
           </div>
           <div className="partitionLine"></div>
           <div className="messageForm">
+            <div className="responsiveContact">Contact</div>
             <form className="formOuter">
               <input
                 className="formInput"
                 type="text"
-                placeholder="Name"
+                placeholder="Your Name"
               ></input>
               <input
                 className="formInput"
                 type="email"
-                placeholder="E-mail"
+                placeholder="Your E-mail"
               ></input>
               <textarea
                 className="formInput2"
                 name="Text1"
                 cols="30"
                 rows="5"
+                placeholder="Message"
               ></textarea>
             </form>
             <button
