@@ -1,0 +1,47 @@
+.message-chars-left {
+    font-size: 0.8em;
+    align-self:end;
+}
+
+.status-message {
+    opacity: 0;
+  }
+  
+.success {
+    opacity: 1;
+    color: var(--tertiary-color);
+}
+
+.failure {
+    opacity: 1;
+    color: rgb(238, 57, 57);
+
+}
+
+.closeButton{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: beige;
+
+    
+
+
+}
+
+.hideButton {
+    display: none;
+
+}
+
+.messageForm {
+    position: relative;
+}
+
+@media screen  and (max-width: 360px) {
+    
+}

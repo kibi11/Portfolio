@@ -154,7 +154,7 @@ a {
         font-size: clamp(1rem, 4.1vw + 0.2rem, 10rem);
         margin: 2%;
         opacity: 0.5;
-        transition: opacity 0.2s linear;
+        transition: opacity 0.2s ease-in-out;
       }
       
       #overlay a:hover {
@@ -186,8 +186,11 @@ a {
   }
 
   #overlay.menu {
-    transform: translateY(70%);
+    transform: translateY(90%);
   }
+
+
+
 
 
  
@@ -203,9 +206,13 @@ a {
   }
 
   #overlay.menu {
-    transform: translateY(80%);
+    transform: translateY(100%);
   }
-
-
+  #overlay a {
+    margin: 40px;
+  }
+  #overlay{
+    height: 500px;
+  }
  
 }

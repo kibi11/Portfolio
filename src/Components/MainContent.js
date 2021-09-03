@@ -6,6 +6,7 @@ import Work from "./Work/Work";
 import Xmeme from "./../Images/x-meme.PNG";
 import Clone1 from "./../Images/clone.PNG";
 import { RemoveScrollBar } from "react-remove-scroll-bar";
+import Contact from "./Contact";
 
 const MainContent = () => {
   const [cardAnime, setCardAnime] = useState(false);
@@ -71,35 +72,7 @@ const MainContent = () => {
             <p>Feel free to connect with me</p>
           </div>
           <div className="partitionLine"></div>
-          <div className="messageForm">
-            <div className="responsiveContact">Contact</div>
-            <form className="formOuter">
-              <input
-                className="formInput"
-                type="text"
-                placeholder="Your Name"
-              ></input>
-              <input
-                className="formInput"
-                type="email"
-                placeholder="Your E-mail"
-              ></input>
-              <textarea
-                className="formInput2"
-                name="Text1"
-                cols="30"
-                rows="5"
-                placeholder="Message"
-              ></textarea>
-            </form>
-            <button
-              className="formButton"
-              type="submit"
-              onClick={handleAnimate}
-            >
-              Go
-            </button>
-          </div>
+          <Contact handleAnimate={handleAnimate} cardAnime={cardAnime} />
         </div>
       </section>
     </div>
