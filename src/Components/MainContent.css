@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
     margin: 0;
@@ -103,7 +104,11 @@ section {
     /* position: absolute; */
     padding: 2em;
     height: 400px;
-    color: rgb(206, 202, 202);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
 }
@@ -112,11 +117,13 @@ section {
     font-size: 60px;
     color: var(--tertiary-color);
     font-weight: 1000;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-size: 200px;
 }
 
 .IntroductionText p {
-    font-size: 0.98rem;
+    font-size: 2rem;
+    font-family: 'Poppins' , 'sans-serif';
 }
 
 /* 

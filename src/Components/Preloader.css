@@ -51,6 +51,6 @@
          
     }
     to {
-        transform: translateY(-100%);
+        transform: translateX(-100%);
     }
 }

@@ -1,5 +1,7 @@
 import "./Header.css";
 import { useState } from "react";
+import { Link, Route } from "react-router-dom";
+import Resume from "./Work/Resume";
 
 const Header = () => {
   const [responsive, setResponsive] = useState(false);
@@ -19,26 +21,32 @@ const Header = () => {
         <div></div>
       </div>
       <div id="overlay" className={responsive ? "menu" : null}>
-        <a href="#Home" onClick={handleResponsive}>
+        <Link to="/Home" onClick={handleResponsive}>
           Home
-        </a>
-        <a href="#section2" onClick={handleResponsive}>
-          My Work
-        </a>
-        <a href="#section3" onClick={handleResponsive}>
+        </Link>
+        <Link to="/section2" exact onClick={handleResponsive}>
+          Work
+        </Link>
+        <Link to="/section3" onClick={handleResponsive}>
           Contact Me
-        </a>
+        </Link>
+        <Link to="/Resume">Resume</Link>
         {/* <a href="#">Link4</a> */}
       </div>
       <ul className="navItems">
-        <li class="navItem">
-          <a href="#Home">Home</a>
+        <li className="navItem">
+          <Link to="/Home">Home</Link>
         </li>
-        <li class="navItem">
-          <a href="#section2">Projects</a>
+        <li className="navItem">
+          <Link to="/#section2" exact>
+            Work
+          </Link>
         </li>
-        <li class="navItem">
-          <a href="#section3">Contact Me</a>
+        <li className="navItem">
+          <Link to="/#section3">Contact</Link>
+        </li>
+        <li className="navItem">
+          <Link to="/Resume">Resume</Link>
         </li>
       </ul>
     </div>
