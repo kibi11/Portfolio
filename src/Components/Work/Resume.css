@@ -10,6 +10,15 @@ img{
     align-items: center;
     flex-direction: column;
     margin-bottom: 10%;
+    height: 80vh;
+    color: aliceblue;
+    letter-spacing: 0.5ch;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
 }
 
 

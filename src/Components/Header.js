@@ -30,8 +30,7 @@ const Header = () => {
         <Link to="/section3" onClick={handleResponsive}>
           Contact Me
         </Link>
-        <Link to="/Resume">Resume</Link>
-        {/* <a href="#">Link4</a> */}
+        <Link to="/Resume" onClick={handleResponsive}>Resume</Link>
       </div>
       <ul className="navItems">
         <li className="navItem">

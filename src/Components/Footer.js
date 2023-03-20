@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <p>Arpan Singh © 2021 - 2022 </p>
+      <p>Arpan Singh © 2022 - 2023 </p>
       <ul className="Icon-wrapper">
         <a href="https://www.linkedin.com/in/arpan-singh-1011/">
           <li className="Icon">

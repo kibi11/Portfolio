@@ -1,5 +1,6 @@
 import "./MainContent.css";
 import profilepic from "../Images/pp.svg";
+import frontpagepng from "../Images/frontpage.png"
 import ParticleBackground from "./ParticleBackground";
 import { useState } from "react";
 import Work from "./Work/Work";
@@ -9,6 +10,14 @@ import { RemoveScrollBar } from "react-remove-scroll-bar";
 import Contact from "./Contact";
 import { Redirect, Route, Switch } from "react-router";
 import Resume from "./Work/Resume";
+
+// import Logs
+import reactPng from "./../Images/react.png";
+import nodePng from "./../Images/node.png";
+import mongoPng from "./../Images/mongodb.png";
+import nferPng from "./../Images/nference.png";
+import abPng from "./../Images/abinbev.jpg";
+
 
 const MainContent = () => {
   const [cardAnime, setCardAnime] = useState(false);
@@ -24,12 +33,48 @@ const MainContent = () => {
       <Route path="/">
         <div className="sectionContainer">
           <section id="section1">
-            <div className="IntroductionText">
-              <h1> Hey </h1>
-              <div className="animatedtext">
-                <p>I make Web Pages </p>
+              <div className="section1-inner-container">
+              <img id="section1-img" src = {frontpagepng}></img>
               </div>
-            </div>
+              <div  className="section1-inner-container">
+                <div id="section1-inner-text">
+                  <h2 id="section1-text-header">Hey y'all</h2>
+                  <div >
+                    <p>
+                      I'm an 2021 Engineering Graduate. Working as a FS developer.<br/>
+                      I also do <stong>freelancing</stong>. Do checkout my projects.
+
+                    </p>
+                  </div>
+                  <div>
+                      Tech stack
+                      <div className="section1-logo-outer">
+                        <div className="section1-logo-container">
+                            <img id="section1-img" height= {50} width= {100} src = {nodePng}></img>
+                        </div>
+                        <div className="section1-logo-container">
+                          <img id="section1-img"  height= {50} width= {100} src = {reactPng}></img>
+                        </div>
+                        <div className="section1-logo-container">
+                          <img id="section1-img"  height= {50} width= {100} src = {mongoPng}></img>
+                        </div>
+                      </div>
+
+                  </div>
+                  <div>
+                      Worked At
+                      <div className="section1-logo-outer">
+                        <div className="section1-logo-container">
+                          <img id="section1-img"  height= {50} width= {100} src = {nferPng}></img>
+                        </div>
+                        <div className="section1-logo-container">
+                          <img id="section1-img"  height= {50} width= {100} src = {abPng}></img>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
           </section>
 
           <section id="section2">
