@@ -22,7 +22,7 @@ graphicsectionContainer {
   animation: inflow 2s linear -1.5s;
 }
 
-@keyframes inflow {
+/* @keyframes inflow {
   from {
     transform: translateX(+100%);
 
@@ -30,4 +30,4 @@ graphicsectionContainer {
   to {
     transform: translateX(0)
   }
-}
+} */
