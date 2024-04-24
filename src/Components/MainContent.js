@@ -58,7 +58,7 @@ const MainContent = () => {
                 </h2>
                 <div className="section1-animate">
                   <p>
-                    Engineer turned full-stack developer Alongside.
+                    Engineer turned full-stack developer. Alongside,{" "}
                     <stong> I freelance. </stong>
                     <br />
                     Dive into my portfolio!
