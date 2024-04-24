@@ -64,6 +64,7 @@ background-image: linear-gradient(180deg, #090c0c 8%, #85ffbd 75%, #090c0c 80%);
 
 .section1-animate {
     transition: transform 0.5s ease-in-out;
+    color: var(--font-color-1);
 }
 
 .section1-inner-container.loaded .section1-animate {
@@ -101,7 +102,7 @@ background-image: linear-gradient(180deg, #090c0c 8%, #85ffbd 75%, #090c0c 80%);
 }
 
 #section1-text-header{
-    color:var(--tertiary-color);
+    color:var(--font-color-1);
     font-size: 3em;
 }
 

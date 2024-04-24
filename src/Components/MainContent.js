@@ -54,13 +54,14 @@ const MainContent = () => {
             >
               <div id="section1-inner-text">
                 <h2 className="section1-animate" id="section1-text-header">
-                  Hey y'all
+                  Greetings,
                 </h2>
                 <div className="section1-animate">
                   <p>
-                    I'm an 2021 Engineering Graduate. Working as a FS developer.
-                    <br />I also do <stong>freelancing</stong>. Do checkout my
-                    projects.
+                    Engineer turned full-stack developer Alongside,{" "}
+                    <stong> I freelance. </stong>
+                    <br />
+                    Dive into my portfolio!
                   </p>
                 </div>
                 <div className="section1-animate">
